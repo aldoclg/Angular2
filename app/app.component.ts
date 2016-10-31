@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
 
-import { MyFirstComponent } from './first/my-first.component';
-
-import { CursoComponent } from './cursos/curso.component';
 
 @Component({
     selector: 'my-app',
@@ -11,7 +8,6 @@ import { CursoComponent } from './cursos/curso.component';
         <p>Hello World!</p>
         <my-first-component></my-first-component>
         <curso-lista></curso-lista>
-    `,
-    directives: [MyFirstComponent, CursoComponent]
+    `
 })
 export class AppComponent { }
