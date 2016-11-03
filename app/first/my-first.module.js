@@ -9,18 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var MyFirstComponent = (function () {
-    function MyFirstComponent() {
+var common_1 = require('@angular/common');
+var my_first_component_1 = require('./my-first.component');
+var MyFirstModule = (function () {
+    function MyFirstModule() {
     }
-    MyFirstComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'my-first-component',
-            template: '<h2>Meu primeiro componente angular 2</h2>'
+    MyFirstModule = __decorate([
+        core_1.NgModule({
+            imports: [common_1.CommonModule],
+            declarations: [my_first_component_1.MyFirstComponent],
+            exports: [my_first_component_1.MyFirstComponent]
         }), 
         __metadata('design:paramtypes', [])
-    ], MyFirstComponent);
-    return MyFirstComponent;
+    ], MyFirstModule);
+    return MyFirstModule;
 }());
-exports.MyFirstComponent = MyFirstComponent;
-//# sourceMappingURL=my-first.component.js.map
+exports.MyFirstModule = MyFirstModule;
+//# sourceMappingURL=my-first.module.js.map

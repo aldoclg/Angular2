@@ -9,18 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var MyFirstComponent = (function () {
-    function MyFirstComponent() {
+var DataBindingComponent = (function () {
+    function DataBindingComponent() {
+        this.url = 'https://github.com/aldoclg/Angular2';
     }
-    MyFirstComponent = __decorate([
+    DataBindingComponent.prototype.construtor = function () { };
+    DataBindingComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'my-first-component',
-            template: '<h2>Meu primeiro componente angular 2</h2>'
+            selector: 'exemplo-data-binding',
+            templateUrl: 'data-binding.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], MyFirstComponent);
-    return MyFirstComponent;
+    ], DataBindingComponent);
+    return DataBindingComponent;
 }());
-exports.MyFirstComponent = MyFirstComponent;
-//# sourceMappingURL=my-first.component.js.map
+exports.DataBindingComponent = DataBindingComponent;
+//# sourceMappingURL=data-binding.component.js.map
