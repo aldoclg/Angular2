@@ -2,5 +2,46 @@
   <article>
     <h3>Interpolation / Interpolação</h3>
     <p>String renderizada com interpolation {{ url }}</p>
+    <p>Result of <code>1 + 1</code> is {{ 1 + 1 }}</p>
+    <p>Result of <code>1 + 1</code> isn't {{ 1 + 1 + getValor() }}</p>
   </article>
+  <article>
+    <h3>Property Binding</h3>
+    <img src="{{ urlImg }}" />
+    <img [src]="urlImg" />
+    <img bind-src="urlImg" />
+  </article>
+
+
+  <article>
+    <h3>Class and Style binding</h3>
+    <div>
+      <label>Selecione uma classe:</label>
+    <select #classe (change)="0" class="form-control">
+      <option value="alert-success">Success</option>
+      <option value="alert-info">Info</option>
+      <option value="alert-warning">Warning</option>
+      <option value="alert-danger">Error</option>
+    </select>
+    <br/><br/>
+    <div class="alert {{ classe.value }}" role="alert"
+      [class.alert-success]="classe.value == 'alert-success'">Using only one alert class</div>
+    <div class="alert " role="alert"
+      [class.alert-success]="classe.value == 'alert-success'">Success</div>
+    <div class="alert " role="alert"
+      [class.alert-info]="classe.value == 'alert-info'">Info</div>
+    <div class="alert " role="alert"
+      [class.alert-warning]="classe.value == 'alert-warning'">Warning</div>
+    <div class="alert " role="alert"
+      [class.alert-danger]="classe.value == 'alert-danger'">Error</div>
+
+      <div class="alert alert-danger" role="alert"
+        [style.display]="classe.value == 'alert-danger'">
+        Esse erro só aparece em caso de erro
+      </div>
+  </div>
+  </article>
+
+
+
 </section>

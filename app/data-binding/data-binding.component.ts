@@ -10,5 +10,10 @@ export class DataBindingComponent {
   construtor() { }
 
   url = 'https://github.com/aldoclg/Angular2';
+  urlImg = 'http://lorempixel.com/400/200/nature/';
+
+  getValor() {
+    return 1;
+  }
 
 }

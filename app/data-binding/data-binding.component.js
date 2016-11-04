@@ -12,8 +12,12 @@ var core_1 = require('@angular/core');
 var DataBindingComponent = (function () {
     function DataBindingComponent() {
         this.url = 'https://github.com/aldoclg/Angular2';
+        this.urlImg = 'http://lorempixel.com/400/200/nature/';
     }
     DataBindingComponent.prototype.construtor = function () { };
+    DataBindingComponent.prototype.getValor = function () {
+        return 1;
+    };
     DataBindingComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
