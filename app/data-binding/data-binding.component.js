@@ -13,16 +13,33 @@ var DataBindingComponent = (function () {
     function DataBindingComponent() {
         this.url = 'https://github.com/aldoclg/Angular2';
         this.urlImg = 'http://lorempixel.com/400/200/nature/';
+        this.conteudoaAtual = '';
+        this.conteudoaSalvo = '';
+        this.isMouseOver = false;
     }
     DataBindingComponent.prototype.construtor = function () { };
     DataBindingComponent.prototype.getValor = function () {
         return 1;
     };
+    DataBindingComponent.prototype.onClick = function () {
+        alert('Botão clicado!');
+    };
+    DataBindingComponent.prototype.onKeyup = function (event) {
+        console.log(event);
+        this.conteudoAtual = event.target.value;
+    };
+    DataBindingComponent.prototype.onSave = function (valor) {
+        this.conteudoSalvo = valor;
+    };
+    DataBindingComponent.prototype.onMouseSpan = function () {
+        this.isMouseOver = !this.isMouseOver;
+    };
     DataBindingComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'exemplo-data-binding',
-            templateUrl: 'data-binding.component.html'
+            templateUrl: 'data-binding.component.html',
+            styleUrls: ['data-binding.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], DataBindingComponent);
