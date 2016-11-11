@@ -9,21 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var common_1 = require('@angular/common');
-var forms_1 = require('@angular/forms');
-var data_binding_component_1 = require('./data-binding.component');
-var DataBindingModule = (function () {
-    function DataBindingModule() {
+var InputPropertyComponent = (function () {
+    function InputPropertyComponent() {
+        this.nomeCurso = '';
     }
-    DataBindingModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule, forms_1.FormsModule],
-            declarations: [data_binding_component_1.DataBindingComponent, InputPropertyComponent],
-            exports: [data_binding_component_1.DataBindingComponent, InputPropertyComponent]
+    InputPropertyComponent.prototype.construtor = function () { };
+    InputPropertyComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'curso',
+            template: '{{ nomeCurso }}'
         }), 
         __metadata('design:paramtypes', [])
-    ], DataBindingModule);
-    return DataBindingModule;
+    ], InputPropertyComponent);
+    return InputPropertyComponent;
 }());
-exports.DataBindingModule = DataBindingModule;
-//# sourceMappingURL=data-binding.module.js.map
+exports.InputPropertyComponent = InputPropertyComponent;
+//# sourceMappingURL=input-property.component.js.map
