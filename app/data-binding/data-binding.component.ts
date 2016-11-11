@@ -18,6 +18,10 @@ export class DataBindingComponent {
 
   isMouseOver : boolean = false;
 
+  nome : string = 'abc';
+
+  pessoa = {nome: '', idade: 18};
+
   getValor() {
     return 1;
   }
@@ -26,7 +30,7 @@ export class DataBindingComponent {
     alert('Botão clicado!');
   }
 
-  onKeyup(event:KeyboardEvent) {
+/*  onKeyup(event:KeyboardEvent) {
     console.log(event);
     this.conteudoAtual = (<HtmlInputElement>event.target).value;
   }
@@ -37,6 +41,6 @@ export class DataBindingComponent {
 
   onMouseSpan() {
     this.isMouseOver = !this.isMouseOver;
-  }
+  }*/
 
 }

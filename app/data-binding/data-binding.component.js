@@ -16,6 +16,8 @@ var DataBindingComponent = (function () {
         this.conteudoaAtual = '';
         this.conteudoaSalvo = '';
         this.isMouseOver = false;
+        this.nome = 'abc';
+        this.pessoa = { nome: '', idade: 18 };
     }
     DataBindingComponent.prototype.construtor = function () { };
     DataBindingComponent.prototype.getValor = function () {
@@ -23,16 +25,6 @@ var DataBindingComponent = (function () {
     };
     DataBindingComponent.prototype.onClick = function () {
         alert('Botão clicado!');
-    };
-    DataBindingComponent.prototype.onKeyup = function (event) {
-        console.log(event);
-        this.conteudoAtual = event.target.value;
-    };
-    DataBindingComponent.prototype.onSave = function (valor) {
-        this.conteudoSalvo = valor;
-    };
-    DataBindingComponent.prototype.onMouseSpan = function () {
-        this.isMouseOver = !this.isMouseOver;
     };
     DataBindingComponent = __decorate([
         core_1.Component({

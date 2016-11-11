@@ -1,4 +1,4 @@
-<section class="property-binding">
+<!--section class="property-binding">
   <article>
     <h3>Interpolation / Interpolação</h3>
     <p>String renderizada com interpolation {{ url }}</p>
@@ -69,5 +69,23 @@
         Passe o mouse :)
       </span>
     </div>
+  </article>
+</section-->
+
+<section class="two-way-binding">
+  <article>
+    <h3>Two-way data binding</h3>
+
+    <div>
+      <input type="text" [(ngModel)]="nome" />
+      <p>Você digitou {{ nome }}</p>
+    </div>
+
+    <div>
+      <input type="text" [(ngModel)]="pessoa.nome" placeholder="nome"/>
+      <input type="text" [(ngModel)]="pessoa.idade"  placeholder="idade"/>
+      Meu nome é {{ pessoa.nome }} e tenho {{  pessoa.idade }} anos
+    </div>
+
   </article>
 </section>

@@ -1,6 +1,6 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule }   from '@angular/forms';
 
 import { AppComponent }  from './app.component';
 
@@ -9,7 +9,11 @@ import { CursosModule } from './cursos/cursos.module';
 import { DataBindingModule } from './data-binding/data-binding.module';
 
 @NgModule({
-  imports:      [ BrowserModule, CursosModule, MyFirstModule, DataBindingModule ],
+  imports:      [ BrowserModule,
+                  FormsModule,
+                  CursosModule,
+                  MyFirstModule,
+                  DataBindingModule ],
   declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]
 })
