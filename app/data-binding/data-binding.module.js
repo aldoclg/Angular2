@@ -12,13 +12,15 @@ var core_1 = require('@angular/core');
 var common_1 = require('@angular/common');
 var forms_1 = require('@angular/forms');
 var data_binding_component_1 = require('./data-binding.component');
+var input_property_component_1 = require('./input-property.component');
+var output_property_component_1 = require('./output-property.component');
 var DataBindingModule = (function () {
     function DataBindingModule() {
     }
     DataBindingModule = __decorate([
         core_1.NgModule({
             imports: [common_1.CommonModule, forms_1.FormsModule],
-            declarations: [data_binding_component_1.DataBindingComponent],
+            declarations: [data_binding_component_1.DataBindingComponent, input_property_component_1.InputPropertyComponent, output_property_component_1.OutputPropertyComponent],
             exports: [data_binding_component_1.DataBindingComponent]
         }), 
         __metadata('design:paramtypes', [])

@@ -6,9 +6,9 @@ import { CursoComponent } from './curso.component';
 
 
 @NgModule({
-  imports:      [ CommonModule ],
+  imports     : [ CommonModule ],
   declarations: [ CursoComponent ],
-  exports: [ CursoComponent ],
-  providers: [ CursosService ]
+  exports     : [ CursoComponent ],
+  providers   : [ CursosService ]
 })
 export class CursosModule { }

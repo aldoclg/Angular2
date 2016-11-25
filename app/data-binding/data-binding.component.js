@@ -18,6 +18,8 @@ var DataBindingComponent = (function () {
         this.isMouseOver = false;
         this.nome = 'abc';
         this.pessoa = { nome: '', idade: 18 };
+        this.nomeCurso = 'Curso Angular 2';
+        this.valorInicial = 1;
     }
     DataBindingComponent.prototype.construtor = function () { };
     DataBindingComponent.prototype.getValor = function () {
