@@ -9,31 +9,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-<<<<<<< HEAD
-=======
 var core_2 = require('@angular/core');
->>>>>>> b1
-var InputPropertyComponent = (function () {
-    function InputPropertyComponent() {
-        this.nomeCurso = '';
+var OutputPropertyComponent = (function () {
+    function OutputPropertyComponent() {
+        this.valor = 0;
     }
-    InputPropertyComponent.prototype.construtor = function () { };
-<<<<<<< HEAD
-=======
+    OutputPropertyComponent.prototype.addOp = function (value) {
+        this.valor = this.valor + value;
+    };
     __decorate([
-        core_2.Input('nome'), 
-        __metadata('design:type', String)
-    ], InputPropertyComponent.prototype, "nomeCurso", void 0);
->>>>>>> b1
-    InputPropertyComponent = __decorate([
+        core_2.Input(), 
+        __metadata('design:type', Number)
+    ], OutputPropertyComponent.prototype, "valor", void 0);
+    OutputPropertyComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'curso',
-            template: '{{ nomeCurso }}'
+            selector: 'contador',
+            template: "\n        <div>\n            <button type=\"button\" class=\"btn btn-primary\" (click)=\"addOp(-1)\">-</button>\n            <input type=\"text\" [value]=\"valor\" >\n            <button type=\"button\" class=\"btn btn-primary\" (click)=\"addOp(1)\">+</button>\n        </div>\n    "
         }), 
         __metadata('design:paramtypes', [])
-    ], InputPropertyComponent);
-    return InputPropertyComponent;
+    ], OutputPropertyComponent);
+    return OutputPropertyComponent;
 }());
-exports.InputPropertyComponent = InputPropertyComponent;
-//# sourceMappingURL=input-property.component.js.map
+exports.OutputPropertyComponent = OutputPropertyComponent;
+//# sourceMappingURL=output-property.component.js.map

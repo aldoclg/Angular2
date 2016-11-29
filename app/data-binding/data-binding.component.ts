@@ -22,6 +22,10 @@ export class DataBindingComponent {
 
   pessoa = {nome: '', idade: 18};
 
+  nomeCurso : string = 'Curso Angular 2';
+
+  valorInicial : number = 1;
+
   getValor() {
     return 1;
   }
