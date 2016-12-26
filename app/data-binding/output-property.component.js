@@ -9,18 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var core_2 = require('@angular/core');
 var OutputPropertyComponent = (function () {
     function OutputPropertyComponent() {
         this.valor = 0;
+        this.mudouValor = new core_1.EventEmitter();
     }
     OutputPropertyComponent.prototype.addOp = function (value) {
         this.valor = this.valor + value;
+        this.mudouValor.emit({ novoValor: this.valor });
     };
     __decorate([
-        core_2.Input(), 
+        core_1.Input(), 
         __metadata('design:type', Number)
     ], OutputPropertyComponent.prototype, "valor", void 0);
+    __decorate([
+        core_1.Output('eventoMudouValor'), 
+        __metadata('design:type', Object)
+    ], OutputPropertyComponent.prototype, "mudouValor", void 0);
     OutputPropertyComponent = __decorate([
         core_1.Component({
             moduleId: module.id,

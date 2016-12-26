@@ -1,4 +1,4 @@
-import { Component, Input, EventEmitter } from '@angular/core';
+import { Component, Input, EventEmitter, Output } from '@angular/core';
 
 
 @Component({
@@ -17,13 +17,14 @@ export class OutputPropertyComponent {
     @Input()
     valor : number = 0;
 
+    @Output('eventoMudouValor')
     mudouValor = new EventEmitter();
 
     constructor() { }
 
     addOp(value) {       
         this.valor = this.valor + value;    
-        this.mudouValor .emit({ novoValor : this.valor });  
+        this.mudouValor.emit({ novoValor : this.valor });  
     }
     
 }

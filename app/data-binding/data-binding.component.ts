@@ -31,7 +31,7 @@ export class DataBindingComponent {
   }
 
   onClick() {
-    alert('Botão clicado!');
+    alert('Botao clicado!');
   }
 
 /*  onKeyup(event:KeyboardEvent) {
@@ -46,5 +46,9 @@ export class DataBindingComponent {
   onMouseSpan() {
     this.isMouseOver = !this.isMouseOver;
   }*/
+  
+  onValorMudou(event) {    
+    console.log(event);
+  }
 
 }

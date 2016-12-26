@@ -26,7 +26,22 @@ var DataBindingComponent = (function () {
         return 1;
     };
     DataBindingComponent.prototype.onClick = function () {
-        alert('Botão clicado!');
+        alert('Botao clicado!');
+    };
+    /*  onKeyup(event:KeyboardEvent) {
+        console.log(event);
+        this.conteudoAtual = (<HtmlInputElement>event.target).value;
+      }
+    
+      onSave(valor : string) {
+        this.conteudoSalvo = valor;
+      }
+    
+      onMouseSpan() {
+        this.isMouseOver = !this.isMouseOver;
+      }*/
+    DataBindingComponent.prototype.onValorMudou = function (event) {
+        console.log(event);
     };
     DataBindingComponent = __decorate([
         core_1.Component({

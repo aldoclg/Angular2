@@ -20,13 +20,8 @@ var DataBindingModule = (function () {
     DataBindingModule = __decorate([
         core_1.NgModule({
             imports: [common_1.CommonModule, forms_1.FormsModule],
-<<<<<<< HEAD
-            declarations: [data_binding_component_1.DataBindingComponent, InputPropertyComponent],
-            exports: [data_binding_component_1.DataBindingComponent, InputPropertyComponent]
-=======
             declarations: [data_binding_component_1.DataBindingComponent, input_property_component_1.InputPropertyComponent, output_property_component_1.OutputPropertyComponent],
             exports: [data_binding_component_1.DataBindingComponent]
->>>>>>> b1
         }), 
         __metadata('design:paramtypes', [])
     ], DataBindingModule);

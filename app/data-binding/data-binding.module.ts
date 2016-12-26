@@ -3,22 +3,16 @@ import { CommonModule }  from '@angular/common';
 import { FormsModule }   from '@angular/forms';
 
 import { DataBindingComponent }   from './data-binding.component';
-<<<<<<< HEAD
+
 import { InputPropertyComponent } from './input-property.component'
 
-@NgModule({
-  imports:      [ CommonModule, FormsModule ],
-  declarations: [ DataBindingComponent, InputPropertyComponent ],
-  exports: [ DataBindingComponent, InputPropertyComponent ]
-=======
-import { InputPropertyComponent } from './input-property.component';
 import { OutputPropertyComponent } from './output-property.component';
 
 @NgModule({
   imports:      [ CommonModule, FormsModule ],
   declarations: [ DataBindingComponent, InputPropertyComponent, OutputPropertyComponent ],
   exports: [ DataBindingComponent ]
->>>>>>> b1
+
 
   })
 export class DataBindingModule { }

@@ -9,25 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var core_2 = require('@angular/core');
-var InputPropertyComponent = (function () {
-    function InputPropertyComponent() {
-        this.nomeCurso = '';
+var common_1 = require('@angular/common');
+var forms_1 = require('@angular/forms');
+var life_cycle_components_1 = require('./life-cycle.components');
+var LifeCycleModule = (function () {
+    function LifeCycleModule() {
     }
-    InputPropertyComponent.prototype.construtor = function () { };
-    __decorate([
-        core_2.Input('nome'), 
-        __metadata('design:type', String)
-    ], InputPropertyComponent.prototype, "nomeCurso", void 0);
-    InputPropertyComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'curso',
-            template: '{{ nomeCurso }}'
+    LifeCycleModule = __decorate([
+        core_1.NgModule({
+            imports: [common_1.CommonModule, forms_1.FormsModule],
+            declarations: [life_cycle_components_1.LifeCycleComponent],
+            exports: [life_cycle_components_1.LifeCycleComponent]
         }), 
         __metadata('design:paramtypes', [])
-    ], InputPropertyComponent);
-    return InputPropertyComponent;
+    ], LifeCycleModule);
+    return LifeCycleModule;
 }());
-exports.InputPropertyComponent = InputPropertyComponent;
-//# sourceMappingURL=input-property.component.js.map
+exports.LifeCycleModule = LifeCycleModule;
+//# sourceMappingURL=life-cycle.module.js.map
